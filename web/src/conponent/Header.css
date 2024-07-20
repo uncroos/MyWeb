@@ -1,15 +1,117 @@
 header {
     background-color: #646464;
     border-bottom: 2px solid #e9ecef;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     z-index: 1000;
+    padding: 0px 0; /* 기본 패딩 */
+    font-size: 14px; /* 기본 폰트 크기 */
+    box-sizing: border-box; /* 패딩과 테두리를 전체 크기에 포함 */
 }
 
 .main-title {
     text-align: center;
     color: white;
-    padding: 10px 0;
+    line-height: 1.2; /* 기본 텍스트 높이 */
+}
+
+/* 메뉴바 */
+.menu-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px; /* 기본 패딩 */
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 1.5em; /* 기본 메뉴 아이콘 크기 */
+}
+
+.menu-icon {
+    font-size: 40px; /* 기본 아이콘 크기 */
+}
+
+/* 메뉴 콘텐츠 */
+.menu-content {
+    display: none;
+    position: fixed;
+    right: 10px;
+    top: calc(50px + 10px); /* 헤더의 높이 + 상단 여백 */
+    background-color: white;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.menu-content.open {
+    display: block;
+}
+
+.menu-content a {
+    display: block;
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 14px;
+    min-width: 180px;
+}
+
+.menu-content a:hover {
+    background-color: #f0f0f0;
+}
+
+/* 콘텐츠 */
+.content {
+    margin-top: calc(50px + 10px); /* 헤더의 높이 + 상단 여백 */
+    padding: 20px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    header {
+        padding: 8px 0; /* 작은 화면에서 패딩 줄이기 */
+        font-size: 12px; /* 작은 화면에서 폰트 크기 줄이기 */
+    }
+
+    .menu-bar {
+        padding: 8px; /* 작은 화면에서 패딩 줄이기 */
+        font-size: 1.2em; /* 작은 화면에서 메뉴 아이콘 크기 줄이기 */
+    }
+
+    .menu-icon {
+        font-size: 24px; /* 작은 화면에서 아이콘 크기 줄이기 */
+    }
+
+    .menu-content {
+        top: calc(40px + 8px); /* 헤더의 높이 + 상단 여백 조정 */
+    }
+
+    .content {
+        margin-top: calc(40px + 8px); /* 헤더의 높이 + 상단 여백 조정 */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 6px 0; /* 더 작은 화면에서 패딩 줄이기 */
+        font-size: 10px; /* 더 작은 화면에서 폰트 크기 줄이기 */
+    }
+
+    .menu-bar {
+        padding: 6px; /* 더 작은 화면에서 패딩 줄이기 */
+        font-size: 1em; /* 더 작은 화면에서 메뉴 아이콘 크기 줄이기 */
+    }
+
+    .menu-icon {
+        font-size: 20px; /* 더 작은 화면에서 아이콘 크기 줄이기 */
+    }
+
+    .menu-content {
+        top: calc(30px + 6px); /* 헤더의 높이 + 상단 여백 조정 */
+    }
+
+    .content {
+        margin-top: calc(30px + 6px); /* 헤더의 높이 + 상단 여백 조정 */
+    }
 }
