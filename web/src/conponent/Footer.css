@@ -10,3 +10,21 @@ footer {
     border-top: 2px solid #e9ecef;
     font-size: 14px;
 }
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-links a:hover {
+    color: #0073e6;
+}
