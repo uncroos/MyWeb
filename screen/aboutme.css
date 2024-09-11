@@ -49,56 +49,52 @@ main {
   padding: 50px;
 }
 
-.work-experience {
-  display: flex;
-  justify-content: space-between;
+.work-experience,
+.skills {
   padding: 50px 0;
 }
 
-.work-experience h2 {
+.work-experience h2,
+.skills h2 {
   font-size: 36px;
   font-weight: bold;
-  margin: 0;
+  margin: 0 0 30px 0;
 }
-
-.jobs {
-  max-width: 70%;
-}
-
-.job-title {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.job-period {
-  color: #888;
-}
-
-.job-description {
-  color: #555;
-  margin-top: 5px;
-  font-size: 14px;
-}
-
-.job {
-  display: flex;
-  flex-direction: column;
-}
-
-.job h3 {
+.job,
+.skill {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.job-period,
+.skill-period {
+  font-size: 14px;
+  color: #888;
+  font-weight: normal;
+  flex-shrink: 0;
+}
+
+.job-title,
+.skill-title {
   font-size: 18px;
   font-weight: bold;
-  margin: 0;
+  margin-bottom: 5px;
+  margin-left: 20px;
 }
 
-.job-period {
-  font-size: 14px;
+.job-description,
+.skill-description {
   color: #555;
+  font-size: 14px;
+  margin: 0;
+  margin-left: 20px;
 }
 
-.job p {
-  margin-top: 5px;
-  color: #777;
+.job-content,
+.skill-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
