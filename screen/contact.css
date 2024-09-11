@@ -117,3 +117,12 @@ footer {
   width: 24px;
   height: 24px;
 }
+
+a {
+  text-decoration: none;
+  color: inherit; /* Optional: This keeps the link color consistent with the surrounding text */
+}
+
+a:hover {
+  color: #000; /* Optional: This changes the link color on hover */
+}
