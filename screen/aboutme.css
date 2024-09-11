@@ -11,6 +11,15 @@ header {
   padding: 20px 40px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit; /* Inherits the color from the parent element */
+}
+
+a:visited {
+  color: #000; /* Ensures visited links stay the same color */
+}
+
 .profile {
   display: flex;
   align-items: center;
