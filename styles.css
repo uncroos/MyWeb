@@ -41,8 +41,18 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #000;
+  color: #000; /* Set the link color */
   font-weight: bold;
+}
+
+/* Additional CSS to remove link styling across the page */
+a {
+  text-decoration: none;
+  color: inherit; /* Inherits the color from the parent element */
+}
+
+a:visited {
+  color: #000; /* Ensures visited links stay the same color */
 }
 
 main {
@@ -108,10 +118,10 @@ main {
 }
 
 footer {
-  background-color: #f2f2f2; /* Light gray background */
+  background-color: #f7f7f7; /* Light gray background */
   padding: 20px 0;
   font-family: Arial, sans-serif; /* Adjust font if needed */
-  border-top: 1px solid #ccc; /* Top border line */
+  border-top: 1px solid #767171; /* Top border line */
 }
 
 .footer-container {

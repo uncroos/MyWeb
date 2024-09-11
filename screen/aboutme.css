@@ -103,3 +103,56 @@ main {
   flex-direction: column;
   align-items: flex-start;
 }
+
+footer {
+  background-color: #f7f7f7; /* Light gray background */
+  padding: 20px 0;
+  font-family: Arial, sans-serif; /* Adjust font if needed */
+  border-top: 1px solid #767171; /* Top border line */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* Distributes sections evenly */
+  align-items: center; /* Aligns items vertically centered */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap; /* Allows items to wrap if the screen is too narrow */
+}
+
+.footer-section {
+  text-align: left;
+  margin: 0 20px; /* Spacing between sections */
+  flex: 1; /* Allows sections to grow equally */
+  min-width: 150px; /* Ensures items don't get too small on narrow screens */
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.footer-section p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons img {
+  width: 24px; /* Adjust size for icons */
+  height: 24px;
+}
+
+.copyright {
+  text-align: right;
+  flex-basis: 100%; /* Ensures it takes the full width when wrapping */
+  margin-top: 10px;
+  font-size: 14px;
+  color: #777; /* Adjust text color */
+}
