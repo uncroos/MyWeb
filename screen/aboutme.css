@@ -45,7 +45,6 @@ nav a {
   font-weight: bold;
 }
 
-/* Layout for main content */
 main {
   padding: 50px;
 }
@@ -79,13 +78,6 @@ main {
   color: #555;
   margin-top: 5px;
   font-size: 14px;
-}
-
-.career {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
 }
 
 .job {
